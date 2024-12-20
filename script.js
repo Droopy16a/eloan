@@ -23,6 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     function turn() {
+        hide = document.getElementsByClassName("hide")[0];
+        hide.style.top = 0
         location.href = "../gift";
 
     }
