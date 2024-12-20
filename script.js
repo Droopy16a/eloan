@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const possibleMoves = game.moves();
 
         if (game.game_over()) {
-            alert("Checkmate!");
+            turn();
         } else {
             const randomIdx = Math.floor(Math.random() * possibleMoves.length);
             const move = possibleMoves[randomIdx];
@@ -21,6 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
             moveCount++; // Increament the move count
         }
     };
+
+    function turn() {
+        location.href = "../gift";
+
+    }
 
     // Function to record and display a move in the move history
     const recordMove = (move, count) => {
