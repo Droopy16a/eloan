@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function turn() {
         hide = document.getElementsByClassName("hide")[0];
         hide.style.top = 0
-        location.href = "../gift";
-
+        setTimeout(() => {location.href = "../gift";}, 1050);
+        
     }
 
     // Function to record and display a move in the move history
